@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".dashboard.mycontests.CurrentFragment">
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/radio_group_border_line"
+        app:tabBackground="@drawable/radio_tab_states1"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+        app:tabMinWidth="@dimen/_80sdp"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/MyCustomTabTextAppearance1"
+        app:tabTextColor="@color/loginStartColor">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/bymonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Months" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/byyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year" />
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs"
+        android:layout_marginTop="@dimen/_5sdp" />
+
+
+</RelativeLayout>

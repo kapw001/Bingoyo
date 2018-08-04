@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bingoyo.viewholder.EarningHistoryViewHolder xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/_10sdp"
+    android:paddingLeft="@dimen/_16sdp"
+    android:paddingRight="@dimen/_16sdp"
+    android:paddingTop="@dimen/_10sdp"
+
+    >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:minWidth="@dimen/_60sdp"
+        android:text="Mars"
+        android:textSize="@dimen/_12sdp" />
+
+    <github.nisrulz.stackedhorizontalprogressbar.StackedHorizontalProgressBar
+        android:id="@+id/stackedhorizontalprogressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_weight="1"
+        android:progressDrawable="@drawable/stacked_horizontal_progress" />
+
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:text="60"
+        android:textSize="@dimen/_12sdp" />
+
+</com.bingoyo.viewholder.EarningHistoryViewHolder>

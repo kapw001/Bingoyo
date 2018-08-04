@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <!--<gradient android:angle="90" android:endColor="#ffffff" android:startColor="#ffffff" android:type="linear" />-->
+
+                    <!--<stroke android:width="1dp" android:color="#504a4b" />-->
+
+                    <solid android:color="@color/loginEndColor" />
+                    <!--<corners android:radius="5dp" />-->
+
+                    <size android:width="@dimen/_20sdp" android:height="@dimen/_20sdp" />
+                    <padding android:bottom="3dp" android:left="3dp" android:right="3dp" android:top="3dp" />
+                </shape>
+            </item>
+            <item>
+
+                <bitmap android:alpha=".25" android:gravity="bottom|right" android:src="@mipmap/ic_down_arrow" />
+                // you can place your dropdown image
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

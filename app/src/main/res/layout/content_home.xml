@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".dashboard.home.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+
+    <RelativeLayout
+        android:id="@+id/points_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_2sdp"
+                app:contentPadding="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Waseem Akram"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16sdp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_5sdp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_14sdp"
+                                android:layout_height="@dimen/_14sdp"
+                                android:tint="@android:color/holo_orange_dark"
+                                app:srcCompat="@drawable/ic_location_on_black_24dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:text="Chennai"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_5sdp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/_3sdp">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_24sdp"
+                                        android:layout_height="@dimen/_24sdp"
+                                        android:background="@drawable/bg_round_home_points"
+                                        android:padding="@dimen/_6sdp"
+                                        android:tint="@color/white"
+                                        app:srcCompat="@drawable/ic_local_bar_black_24dp" />
+
+                                    <View
+                                        android:layout_width="5dp"
+                                        android:layout_height="match_parent" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="6000"
+                                            android:textColor="@android:color/holo_orange_dark"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Points"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_24sdp"
+                                        android:layout_height="@dimen/_24sdp"
+                                        android:background="@drawable/bg_round_home_points"
+                                        android:padding="@dimen/_6sdp"
+                                        android:tint="@color/white"
+                                        app:srcCompat="@drawable/ic_local_bar_black_24dp" />
+
+                                    <View
+                                        android:layout_width="5dp"
+                                        android:layout_height="match_parent" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="400"
+                                            android:textColor="@android:color/holo_orange_dark"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Gems"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_24sdp"
+                                        android:layout_height="@dimen/_24sdp"
+                                        android:background="@drawable/bg_round_home_points"
+                                        android:padding="@dimen/_6sdp"
+                                        android:tint="@color/white"
+                                        app:srcCompat="@drawable/ic_local_bar_black_24dp" />
+
+                                    <View
+                                        android:layout_width="5dp"
+                                        android:layout_height="match_parent" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="15"
+                                            android:textColor="@android:color/holo_orange_dark"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Artefacts"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="@dimen/_72sdp"
+            android:layout_height="@dimen/_72sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/drawable_rounded_corner_background"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile" />
+
+        <!--<com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/imageView1"-->
+        <!--android:layout_width="@dimen/_100sdp"-->
+        <!--android:layout_height="@dimen/_100sdp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="60dp"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:src="@drawable/profile"-->
+        <!--app:riv_corner_radius="8dip"-->
+        <!--app:riv_mutate_background="false"-->
+        <!--app:riv_oval="false"-->
+        <!--app:riv_tile_mode="repeat" />-->
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/points_view"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_2sdp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/dash_all_contests"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:stateListAnimator="@drawable/button_animation"
+                app:cardCornerRadius="@dimen/_2sdp"
+                app:cardElevation="@dimen/_2sdp"
+                app:contentPadding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:src="@drawable/ic_location_on_black_24dp"
+                        android:tint="@color/loginStartColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/all_contests"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/dash_my_contests"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:stateListAnimator="@drawable/button_animation"
+                app:cardCornerRadius="@dimen/_2sdp"
+                app:cardElevation="@dimen/_4sdp"
+                app:contentPadding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:src="@drawable/ic_local_bar_black_24dp"
+                        android:tint="@color/loginStartColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/my_contests"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/dash_my_leaderboard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:stateListAnimator="@drawable/button_animation"
+                app:cardCornerRadius="@dimen/_2sdp"
+                app:cardElevation="@dimen/_4sdp"
+                app:contentPadding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:src="@drawable/ic_local_bar_black_24dp"
+                        android:tint="@color/loginStartColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Leaderboard"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_2sdp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/dash_my_rewards"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:stateListAnimator="@drawable/button_animation"
+                app:cardCornerRadius="@dimen/_2sdp"
+                app:cardElevation="@dimen/_2sdp"
+                app:contentPadding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:src="@drawable/ic_location_on_black_24dp"
+                        android:tint="@color/loginStartColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/rewards"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/dash_my_groups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:stateListAnimator="@drawable/button_animation"
+                app:cardCornerRadius="@dimen/_2sdp"
+                app:cardElevation="@dimen/_2sdp"
+                app:contentPadding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:src="@drawable/ic_local_bar_black_24dp"
+                        android:tint="@color/loginStartColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/my_groups"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/dash_my_earnings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:stateListAnimator="@drawable/button_animation"
+                app:cardCornerRadius="@dimen/_2sdp"
+                app:cardElevation="@dimen/_2sdp"
+                app:contentPadding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:src="@drawable/ic_local_bar_black_24dp"
+                        android:tint="@color/loginStartColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/my_earnings"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

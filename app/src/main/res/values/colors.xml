@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#833BA5</color>
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="facebookColor">#3B5999</color>
+    <color name="lighter_gray">#ddd</color>
+    <color name="tabTextColor">#9f64ef</color>
+    <color name="tabLineColor">#9784A8</color>
+    <color name="loginStartColor">#200446</color>
+    <color name="loginEndColor">#833BA5</color>
+    <color name="migrateBtnColor">#562A82</color>
+
+    <color name="signupStartColor">#5D1BDD</color>
+    <color name="signupEndColor">#298BFB</color>
+
+
+    <color name="radio_button_selected_color">#ff33b5e5</color>
+    <color name="radio_button_unselected_color">#e0e0e0</color>
+    <color name="circlecolor">#20000000</color>
+    <color name="tabUnSelectedColor">#50000000</color>
+
+    <color name="colorPrimaryalpha">#703F51A5</color>
+
+</resources>

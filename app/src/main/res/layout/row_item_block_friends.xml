@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bingoyo.viewholder.BlockFriendsViewHolder xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_16sdp">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/blockSwitch"
+        android:paddingRight="@dimen/_16sdp"
+        android:text="Name"
+        android:textSize="@dimen/_16sdp" />
+
+
+    <Switch
+        android:id="@+id/blockSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:thumb="@drawable/switch_thumb"
+        android:track="@drawable/switch_track" />
+
+</com.bingoyo.viewholder.BlockFriendsViewHolder>

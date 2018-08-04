@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bingoyo.viewholder.RedeemedRewardsViewHolder xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:contentPadding="@dimen/_10sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/amazon_logo_rgb" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/price_availed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Amazon Rs. 500 is availed"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="The above logo design and the artwork you are about to download is the intellectual property of the copyright and/or trademark holder and is offered to you as a convenience for lawful use with proper permission from the copyright and/or trademark holder only. "
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/get_my_rewards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobile_number"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_remove_bg"
+                android:elevation="8dp"
+                android:minHeight="@dimen/_42sdp"
+                android:stateListAnimator="@drawable/button_animation"
+                android:text="Delete Item"
+                android:textAllCaps="false"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.Button"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</com.bingoyo.viewholder.RedeemedRewardsViewHolder>

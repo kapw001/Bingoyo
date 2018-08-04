@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/_16sdp"
+    tools:context=".authenticate.ChangePassWordActivity">
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:background="@drawable/bg_round_edittext"
+        android:hint="Existing Password"
+        android:inputType="text"
+        android:minHeight="@dimen/_42sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_25sdp"
+        android:paddingRight="@dimen/_25sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:background="@drawable/bg_round_edittext"
+        android:hint="New Password"
+
+        android:inputType="textPassword"
+        android:minHeight="@dimen/_42sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_25sdp"
+        android:paddingRight="@dimen/_25sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:background="@drawable/bg_round_edittext"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:minHeight="@dimen/_42sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_25sdp"
+        android:paddingRight="@dimen/_25sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/save_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:background="@drawable/btn_sign_bg"
+        android:elevation="8dp"
+        android:minHeight="@dimen/_42sdp"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:text="Save new Password"
+        android:textAllCaps="false"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.Button"
+        android:textColor="@color/white" />
+
+</LinearLayout>

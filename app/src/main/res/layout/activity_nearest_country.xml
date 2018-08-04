@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".shownearestcountry.NearestCountryActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:background="@drawable/gradient_login_view">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/dummy_title"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_logo_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="-10dp"
+                android:text="Bingoyo"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_32sdp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="Select Nearest Zone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/_5sdp" />-->
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/dummy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_spinner"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Select Nearest Zone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/layout_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:entries="@array/country"
+                android:padding="8dp"
+                android:popupBackground="@drawable/gradient_login_view"
+                android:theme="@style/mySpinnerItemStyle"
+                android:visibility="visible" />
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="Select Nearest Zone"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/_10sdp" />-->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:background="@drawable/bg_round_arrow"
+                android:clickable="false"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/statesListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp">
+
+        <Button
+            android:id="@+id/select_zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/btn_migrate_bg"
+            android:elevation="8dp"
+            android:minHeight="50dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:stateListAnimator="@drawable/button_animation"
+            android:text="Select Zone"
+            android:textAllCaps="false"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.Button"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

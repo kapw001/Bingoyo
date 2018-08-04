@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/white"
+    tools:context=".dashboard.mycontests.CurrentFragment">
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:tabIndicatorColor="@color/loginStartColor"
+        app:tabIndicatorHeight="@dimen/_4sdp"
+        app:tabSelectedTextColor="@color/loginStartColor"
+        app:tabTextAppearance="@style/MyCustomTabTextAppearance"
+        app:tabTextColor="@color/tabUnSelectedColor" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs"
+        android:layout_marginTop="@dimen/_10sdp">
+
+    </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>

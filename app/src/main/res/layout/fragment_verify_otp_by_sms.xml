@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authenticate.migrate.VerifyOtpBySmsFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_16sdp">
+
+        <com.bingoyo.pinview.Pinview
+            android:id="@+id/pinview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cursorVisible="false"
+            app:forceKeyboard="true"
+            app:inputType="number"
+            app:password="false"
+            app:pinHeight="50dp"
+            app:pinLength="6"
+            app:pinWidth="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="OTP expires in 10 secs"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/verify_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/btn_bg"
+            android:elevation="8dp"
+            android:minHeight="@dimen/_40sdp"
+            android:stateListAnimator="@drawable/button_animation"
+            android:text="Verify OTP"
+            android:textAllCaps="false"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.Button"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/resend_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/btn_migrate_bg"
+            android:elevation="8dp"
+            android:minHeight="@dimen/_40sdp"
+            android:stateListAnimator="@drawable/button_animation"
+            android:text="Resend OTP by sms"
+            android:textAllCaps="false"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.Button"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

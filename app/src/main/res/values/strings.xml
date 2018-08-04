@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Bingoyo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="accept_terms"><![CDATA[I accept the Terms & Conditions]]></string>
+
+
+    <string-array name="age_group">
+        <item>Select Age Group</item>
+        <item>13 – 18</item>
+        <item>19 – 25</item>
+        <item>26 – 35</item>
+        <item>36 – 50</item>
+        <item>51 – 65</item>
+        <item>66 – 90</item>
+
+    </string-array>
+
+    <string-array name="country">
+
+        <item>India</item>
+        <item>US</item>
+        <item>UK</item>
+
+
+    </string-array>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="all_contests">All Contests</string>
+    <string name="my_contests">My Contests</string>
+    <string name="rewards">Rewards</string>
+    <string name="my_groups">My Groups</string>
+    <string name="my_earnings">My Earnings</string>
+    <string name="location">Location</string>
+    <string name="txtdes">This prevents display the softkeyboard when the activity is loaded with your fragments. But if you click on some EditText, the softkeyboard will be displayed. Affects all fragments loaded by your Activity. For hide always and don\'t display never the softkeyboard, in the manifest you should use stateAlwaysHidden in android:windowSoftInputMode. Sorry for my english.I have an Android app that contains a ViewPager with 2 fragments. The first fragment contains an EditText field. When the app launches, that field immediately takes focus and the soft keyboard is launched (which I want to happen). The second fragment only contains a list (no editable text fields). When I swipe from fragment 1 to fragment 2, I\'d like the keyboard to go away. Nothing I\'ve tried seems to work. The keyboard not only remains in view, it continues to update fragment 1\'s EditText field.
+
+I figure I\'m either using incorrect code to hide the keyboard or placing it in an incorrect location. If anyone can post an example of the correct implementation it would be greatly appreciated!</string>
+    <string name="instruction">Chess is a game played between two opponents on opposite sides of a board containing 64 squares of alternating colors.</string>
+    <string name="read_write_rationale">Please provide read and write permission to update profile image</string>
+    <string name="select_all">Select All</string>
+
+
+</resources>

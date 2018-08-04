@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bingoyo.viewholder.AvailableViewHolder xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:singleLine="true"
+        android:text="Today"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@+id/title"
+        android:background="@color/lighter_gray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contestsView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:clipToPadding="false"
+        android:padding="@dimen/_10sdp" />
+
+
+</com.bingoyo.viewholder.AvailableViewHolder>

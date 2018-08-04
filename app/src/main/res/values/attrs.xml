@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Pinview">
+        <attr name="pinBackground" format="reference"/>
+        <attr name="pinLength" format="integer"/>
+        <attr name="pinWidth" format="dimension"/>
+        <attr name="pinHeight" format="dimension"/>
+        <attr name="splitWidth" format="dimension"/>
+        <attr name="cursorVisible" format="boolean"/>
+        <attr name="password" format="boolean"/>
+        <attr name="forceKeyboard" format ="boolean"/>
+        <attr name="hint" format="string"/>
+        <attr name="inputType"/>
+    </declare-styleable>
+    <attr name="inputType" format="enum">
+        <enum name="text" value="0"/>
+        <enum name="number" value="1"/>
+    </attr>
+
+
+    <declare-styleable name="SegmentedGroup">
+        <attr name="sc_corner_radius" format="dimension" />
+        <attr name="sc_border_width" format="dimension" />
+        <attr name="sc_tint_color" format="color" />
+        <attr name="sc_checked_text_color" format="color" />
+        <attr name="sc_unchecked_tint_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="AwesomeRadioButton">
+        <attr name="awesome_text" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaxHeightScrollView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+</resources>

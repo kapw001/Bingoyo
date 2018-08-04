@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".authenticate.RegisterFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:background="@drawable/bg_round_edittext"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:minHeight="@dimen/_42sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:paddingRight="@dimen/_25sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_12ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:background="@drawable/bg_round_edittext"
+                    android:hint="Nick Name"
+                    android:inputType="text"
+                    android:minHeight="@dimen/_42sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:paddingRight="@dimen/_25sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_12ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_round_edittext"
+                        android:gravity="center"
+                        android:hint="+91"
+                        android:inputType="number"
+                        android:minHeight="@dimen/_42sdp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round_edittext"
+                        android:hint="Mobile Number"
+                        android:inputType="number"
+                        android:minHeight="@dimen/_42sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_25sdp"
+                        android:paddingRight="@dimen/_25sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:background="@drawable/bg_round_edittext"
+                    android:gravity="center"
+                    android:minHeight="@dimen/_42sdp">
+
+
+                    <Spinner
+                        android:id="@+id/age_group"
+                        style="@style/Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:layout_marginRight="@dimen/_25sdp"
+                        android:entries="@array/age_group" />
+
+
+                </LinearLayout>
+
+                <!--<android.support.v7.widget.AppCompatEditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/_16sdp"-->
+                <!--android:layout_marginRight="@dimen/_16sdp"-->
+                <!--android:background="@drawable/bg_round_edittext"-->
+                <!--android:hint="Age group"-->
+                <!--android:inputType="text"-->
+                <!--android:minHeight="@dimen/_42sdp"-->
+                <!--android:paddingBottom="@dimen/_10sdp"-->
+                <!--android:paddingLeft="@dimen/_25sdp"-->
+                <!--android:paddingRight="@dimen/_25sdp"-->
+                <!--android:paddingTop="@dimen/_10sdp"-->
+                <!--android:textSize="@dimen/_12ssp" />-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:background="@drawable/bg_round_edittext"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="@dimen/_42sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:paddingRight="@dimen/_25sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_12ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:background="@drawable/bg_round_edittext"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:minHeight="@dimen/_42sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:paddingRight="@dimen/_25sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_12ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:background="@drawable/bg_round_edittext"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:minHeight="@dimen/_42sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:paddingRight="@dimen/_25sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_12ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/terms_condition"
+                        style="@style/radionbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:text="@string/accept_terms"
+                        android:textSize="@dimen/_12sdp" />
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:background="@drawable/btn_sign_bg"
+                    android:elevation="8dp"
+                    android:minHeight="@dimen/_42sdp"
+                    android:scaleX="1"
+                    android:scaleY="1"
+                    android:text="Signup"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.Button"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_request_otp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/fragment"
+            android:name="com.bingoyo.authenticate.ForgotFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

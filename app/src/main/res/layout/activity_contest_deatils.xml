@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dashboard.allcontests.ContestDeatilsActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.6"
+        android:background="@drawable/gradient_login_view">
+
+
+        <RelativeLayout
+            android:id="@+id/layout_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:tint="@color/white"
+                app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Contest Detail"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_bar"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starting in"
+                android:textColor="@color/loginEndColor"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/count_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_34ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Seconds"
+                android:textColor="@color/loginEndColor"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:tabIndicatorColor="@color/loginStartColor"
+            app:tabIndicatorHeight="@dimen/_4sdp"
+            app:tabSelectedTextColor="@color/loginStartColor"
+            app:tabTextAppearance="@style/MyCustomTabTextAppearance"
+            app:tabTextColor="@color/tabUnSelectedColor" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabs"
+            android:layout_marginTop="@dimen/_10sdp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

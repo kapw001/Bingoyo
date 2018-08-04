@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".authenticate.MainActivity">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/radio_group_border_line"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/upcoming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_tab_states"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="Upcoming"
+            android:textColor="@drawable/radio_tab_text_states" />
+
+        <RadioButton
+            android:id="@+id/topics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_tab_states"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="Topics"
+            android:textColor="@drawable/radio_tab_text_states" />
+    </RadioGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/allcontestsListview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/_20sdp" />
+
+
+</LinearLayout>

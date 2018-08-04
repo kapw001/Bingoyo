@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bingoyo.viewholder.MyGroupViewHolder xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_8sdp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/bg_round_mycontest"
+            android:elevation="@dimen/_2sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="# LC Gen 'Y' contest"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile"
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/drawable_rounded_corner_background"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/profile"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="Invited by Sara Haroon"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <com.bingoyo.customview.MaxHeightScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:scrollbars="vertical"
+                app:maxHeight="100dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txtdes" />
+
+
+                </LinearLayout>
+
+
+            </com.bingoyo.customview.MaxHeightScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:src="@drawable/profile" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/mdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="21st May 2018" />
+
+                    <TextView
+                        android:id="@+id/mtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="end"
+                        android:text="10:00 AM" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp" />
+
+        <Button
+            android:id="@+id/more_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:background="@drawable/btn_bg"
+            android:elevation="8dp"
+            android:minHeight="@dimen/_42sdp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:text="More Info"
+            android:textAllCaps="false"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.Button"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <!--</android.support.v7.widget.CardView>-->
+
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_round_arrow"
+        android:elevation="@dimen/_4sdp"
+        android:tint="@android:color/white"
+        app:srcCompat="@drawable/ic_close_black_24dp" />
+
+</com.bingoyo.viewholder.MyGroupViewHolder>
